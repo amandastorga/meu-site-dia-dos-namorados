@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cofre do Amor</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f8ff;
+            font-family: 'Arial', sans-serif;
+        }
+        .container {
+            text-align: center;
+            border: 2px solid #ff69b4;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #fff0f5;
+        }
+        .container h1 {
+            color: #ff69b4;
+        }
+        .container input {
+            padding: 10px;
+            margin: 10px 0;
+            border: 2px solid #ff69b4;
+            border-radius: 5px;
+            width: 80%;
+        }
+        .container button {
+            padding: 10px 20px;
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .container button:hover {
+            background-color: #ff1493;
+        }
+        .hint {
+            margin-top: 10px;
+            color: #696969;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Cofre do Amor</h1>
+        <p>Para acessar, responda a pergunta:</p>
+        <p><strong>Amor da vida de Amanda Astorga</strong></p>
+        <input type="text" id="answer" placeholder="Digite a resposta aqui">
+        <button onclick="checkAnswer()">Acessar</button>
+        <div class="hint">
+            <p>Dica: 01000010 01110101 01110000 01100001 01100011 01100001 01101100</p>
+        </div>
+    </div>
+
+    <script>
+        function checkAnswer() {
+            const answer = document.getElementById('answer').value.toLowerCase();
+            if (answer === 'bupacal') {
+                window.location.href = 'proxima_pagina.html';
+            } else {
+                alert('Resposta incorreta. Tente novamente!');
+            }
+        }
+    </script>
+</body>
+</html>
