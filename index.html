@@ -10,7 +10,8 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #f0f8ff;
+            background-color: #2c2c2c;
+            color: white;
             font-family: 'Arial', sans-serif;
             transition: background-color 0.3s, color 0.3s;
         }
@@ -19,7 +20,7 @@
             border: 2px solid #ff69b4;
             padding: 20px;
             border-radius: 10px;
-            background-color: #fff0f5;
+            background-color: #4a4a4a;
             transition: background-color 0.3s, color 0.3s;
         }
         .container h1 {
@@ -31,6 +32,8 @@
             border: 2px solid #ff69b4;
             border-radius: 5px;
             width: 80%;
+            background-color: #333;
+            color: white;
         }
         .container button {
             padding: 10px 20px;
@@ -45,42 +48,11 @@
         }
         .hint {
             margin-top: 10px;
-            color: #696969;
-        }
-        .mode-switch {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            padding: 10px;
-            background-color: #ff69b4;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .mode-switch:hover {
-            background-color: #ff1493;
-        }
-        body.dark-mode {
-            background-color: #2c2c2c;
-            color: white;
-        }
-        .container.dark-mode {
-            background-color: #4a4a4a;
-            border-color: #ff69b4;
-        }
-        .container input.dark-mode {
-            border-color: #ff69b4;
-            background-color: #333;
-            color: white;
-        }
-        .hint.dark-mode {
             color: #b3b3b3;
         }
     </style>
 </head>
 <body>
-    <button class="mode-switch" onclick="toggleMode()">Modo Noturno</button>
     <div class="container">
         <h1>Cofre do Amor</h1>
         <p>Para acessar, responda a pergunta:</p>
@@ -105,22 +77,6 @@
         function handleKeyPress(event) {
             if (event.key === 'Enter') {
                 checkAnswer();
-            }
-        }
-
-        function toggleMode() {
-            document.body.classList.toggle('dark-mode');
-            const container = document.querySelector('.container');
-            container.classList.toggle('dark-mode');
-            const inputs = document.querySelectorAll('.container input');
-            inputs.forEach(input => input.classList.toggle('dark-mode'));
-            const hint = document.querySelector('.hint');
-            hint.classList.toggle('dark-mode');
-            const modeSwitch = document.querySelector('.mode-switch');
-            if (document.body.classList.contains('dark-mode')) {
-                modeSwitch.textContent = 'Modo Claro';
-            } else {
-                modeSwitch.textContent = 'Modo Noturno';
             }
         }
     </script>
