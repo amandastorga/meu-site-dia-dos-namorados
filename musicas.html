@@ -7,12 +7,17 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            background-color: #2c2c2c;
+            color: white;
             text-align: center;
             padding: 20px;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
         .container {
-            background-color: #fff;
+            background-color: #4a4a4a;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             padding: 20px;
@@ -34,24 +39,42 @@
         .link-list a:hover {
             text-decoration: underline;
         }
+        .back-button {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: #ff69b4;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .back-button:hover {
+            background-color: #ff1493;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Músicas que lembram você</h1>
         <ul class="link-list">
-            <li><a href="https://open.spotify.com/intl-pt/track/1Dr5JexwA15wmKe7Y7maA9?si=e06e844f6a654382">Past lives</a></li>
-            <li><a href="https://open.spotify.com/intl-pt/track/4f7phfIoOpIhSI8tIK11f6?si=f44095dd02754d51">Universo de coisas que eu desconheço</a></li>
-            <li><a href="https://open.spotify.com/intl-pt/track/2pSnDX8CryayQEGZntPwKV?si=4fcc722d3d22442e">Deixa eu amar você</a></li>
-            <li><a href="https://www.youtube.com/watch?v=0M-4wsZssyY">Take on the world</a></li>
-            <li><a href="https://www.youtube.com/watch?v=LOlxakWsfNY">Those eyes</a></li>
-            <li><a href="https://www.youtube.com/watch?v=gg_je5ExkQI">Falling like the Stars</a></li>
-            <li><a href="https://www.youtube.com/watch?v=ERLHz-wU0tQ">Love Someone</a></li>
-            <li><a href="https://www.youtube.com/watch?v=BmJR2ratGg4">Until i found you</a></li>
-            <li><a href="https://open.spotify.com/intl-pt/track/1snE820RBNNYwpqZO8ItYf?si=32d7f7b29440410c">Recadin no espelho</a></li>
-            <li><a href="https://open.spotify.com/intl-pt/track/2D1rmVTeaZrr5Ipow29t4b?si=420577fa65574093">Sintomas de prazer</a></li>
-            <li><a href="https://open.spotify.com/intl-pt/track/5XeFesFbtLpXzIVDNQP22n?si=ef27fced585745ba">I Wanna be yours</a></li>
+            <li><a href="https://open.spotify.com/intl-pt/track/1Dr5JexwA15wmKe7Y7maA9?si=e06e844f6a654382" target="_blank">Past lives</a></li>
+            <li><a href="https://open.spotify.com/intl-pt/track/4f7phfIoOpIhSI8tIK11f6?si=f44095dd02754d51" target="_blank">Universo de coisas que eu desconheço</a></li>
+            <li><a href="https://open.spotify.com/intl-pt/track/2pSnDX8CryayQEGZntPwKV?si=4fcc722d3d22442e" target="_blank">Deixa eu amar você</a></li>
+            <li><a href="https://www.youtube.com/watch?v=0M-4wsZssyY" target="_blank">Take on the world</a></li>
+            <li><a href="https://www.youtube.com/watch?v=LOlxakWsfNY" target="_blank">Those eyes</a></li>
+            <li><a href="https://www.youtube.com/watch?v=gg_je5ExkQI" target="_blank">Falling like the Stars</a></li>
+            <li><a href="https://www.youtube.com/watch?v=ERLHz-wU0tQ" target="_blank">Love Someone</a></li>
+            <li><a href="https://www.youtube.com/watch?v=BmJR2ratGg4" target="_blank">Until i found you</a></li>
+            <li><a href="https://open.spotify.com/intl-pt/track/1snE820RBNNYwpqZO8ItYf?si=32d7f7b29440410c" target="_blank">Recadin no espelho</a></li>
+            <li><a href="https://open.spotify.com/intl-pt/track/2D1rmVTeaZrr5Ipow29t4b?si=420577fa65574093" target="_blank">Sintomas de prazer</a></li>
+            <li><a href="https://open.spotify.com/intl-pt/track/5XeFesFbtLpXzIVDNQP22n?si=ef27fced585745ba" target="_blank">I Wanna be yours</a></li>
         </ul>
     </div>
+
+    <!-- Botão para voltar à página anterior -->
+    <a href="javascript:history.back()" class="back-button">Voltar</a>
 </body>
 </html>
