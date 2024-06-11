@@ -1,1 +1,125 @@
-
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memórias Que Eu Amo</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f0f8ff;
+            font-family: 'Arial', sans-serif;
+            padding: 20px;
+        }
+        .timeline {
+            width: 80%;
+            max-width: 800px;
+            position: relative;
+        }
+        .event {
+            background-color: #fff0f5;
+            border: 2px solid #ff69b4;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 20px 0;
+            position: relative;
+        }
+        .event h3 {
+            color: #ff69b4;
+            margin-bottom: 10px;
+        }
+        .event img, .event video {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .event p {
+            color: #333;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            width: 2px;
+            background-color: #ff69b4;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .event::after {
+            content: '';
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            background-color: #ff69b4;
+            border-radius: 50%;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .event-content {
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Memórias Que Eu Amo</h1>
+    <div class="timeline">
+        <div class="event">
+            <h3>21/05/2029</h3>
+            <div class="event-content">
+                <img src="https://drive.google.com/uc?export=view&id=1kmAFA5jrKPhlXqcVb4JMHxeoZbShM7yx" alt="Amanda, você tem o LinkedIn Premium?">
+                <p>"Amanda, você tem o LinkedIn Premium?"</p>
+            </div>
+        </div>
+        <div class="event">
+            <h3>03/06/2023</h3>
+            <div class="event-content">
+                <img src="https://drive.google.com/uc?export=view&id=15mpAqg-vB7YfOqtfRGvjIOZFCRC0Ott2" alt="Depois da nossa primeira ficada">
+                <img src="https://drive.google.com/uc?export=view&id=1vwCo-i3W1CFGeVBZ1k1mmrh22QIfXWsS" alt="Pensando que seriamos bons amigos">
+                <p>Eu no dia seguinte depois da nossa primeira ficada super plena pensando que eu e você seriamos bons amigos porque eu não queria nada sério naquele momento.</p>
+                <img src="https://drive.google.com/uc?export=view&id=1YhbRVrAUYlxmsRlTCRF9UDLAlfHzPEA9" alt="Viagem para Bauru">
+                <p>Corta pra gente (eu, vc, o Bruninho e o João) indo pra Bauru e chegando em Areiópolis no outro dia às 08h da manhã.</p>
+            </div>
+        </div>
+        <div class="event">
+            <h3>02/07/2023</h3>
+            <div class="event-content">
+                <img src="https://drive.google.com/uc?export=view&id=15cYFR6o78i5ZBma4HOOItjsPfU1hZJwe" alt="No Brasa e depois sorvetinho">
+                <p>A gente indo no Brasa e depois tomar um sorvetinho nhami nhami.</p>
+            </div>
+        </div>
+        <div class="event">
+            <h3>04/07/2024</h3>
+            <div class="event-content">
+                <img src="https://drive.google.com/uc?export=view&id=1hSr49XxyzHnyH6xUwx9PhbLf7nthJzCk" alt="Noites de boliche">
+                <p>Das nossas noites de boliche <3</p>
+            </div>
+        </div>
+        <div class="event">
+            <h3>09/07/2027</h3>
+            <div class="event-content">
+                <img src="https://drive.google.com/uc?export=view&id=16nTZL79W_1rorW38bQRHHgbp1S2ypIj-" alt="Segunda ida para Bauru">
+                <p>Nossa segunda ida pra Bauru e a gente super bebados haha.</p>
+                <img src="https://drive.google.com/uc?export=view&id=18eQJJmX8EZ8WtcK25LtYiSZkWmVYk4QU" alt="Amo essa foto">
+                <p>Eu amo essa foto <3.</p>
+            </div>
+        </div>
+        <div class="event">
+            <h3>12/07/2024</h3>
+            <div class="event-content">
+                <img src="https://drive.google.com/uc?export=view&id=10HQ7WnGToGHIJAzzUYc_cUGB7w-dbNJu" alt="Primeiro Airbnb juntos">
+                <p>Nosso primeiro Airbnb juntosss.</p>
+                <video controls>
+                    <source src="https://drive.google.com/uc?export=view&id=1SOq3SgfLjEMZL0W2nO-PbnNWi97jZArD" type="video/mp4">
+                    Seu navegador não suporta o elemento de vídeo.
+                </video>
+                <p>Eu amo esse vídeo kkkkkkkk.</p>
+                <img src="https://drive.google.com/uc?export=view&id=1hjtPtFKvOn_JfzwERhn739omep0JUqjS" alt="Super fofos">
+                <p>Super fofossss.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
