@@ -7,12 +7,17 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            background-color: #2c2c2c;
+            color: white;
             text-align: center;
             padding: 20px;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
         .container {
-            background-color: #fff;
+            background-color: #4a4a4a;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             padding: 20px;
@@ -34,6 +39,21 @@
         .link-list a:hover {
             text-decoration: underline;
         }
+        .back-button {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: #ff69b4;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .back-button:hover {
+            background-color: #ff1493;
+        }
     </style>
 </head>
 <body>
@@ -47,9 +67,9 @@
             <li><a href="https://amandastorga.github.io/te-amo-voce/memorias-que-eu-amo.html">Memórias que eu amo</a></li>
             <li><a href="https://amandastorga.github.io/te-amo-voce/musicas.html">Músicas que lembram você</a></li>
         </ul>
-
-        
-        
     </div>
+
+    <!-- Botão para voltar à página anterior -->
+    <a href="javascript:history.back()" class="back-button">Voltar</a>
 </body>
 </html>
