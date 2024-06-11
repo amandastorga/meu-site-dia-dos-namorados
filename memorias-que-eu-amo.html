@@ -5,60 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Memórias Que Eu Amo</title>
     <style>
-    body {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: #f0f8ff;
-        font-family: 'Arial', sans-serif;
-        padding: 20px;
-    }
-    .timeline {
-        width: 80%;
-        max-width: 800px;
-        position: relative;
-    }
-    .event {
-        background-color: #fff0f5;
-        border: 2px solid #ff69b4;
-        border-radius: 10px;
-        padding: 15px;
-        margin: 20px 0;
-        display: flex;
-        align-items: center;
-        gap: 20px;
-        flex-wrap: wrap; /* Adicionada esta linha */
-    }
-    .event h3 {
-        color: #ff69b4;
-        margin-bottom: 10px;
-    }
-    .event img {
-        max-width: 150px;
-        height: auto;
-        border-radius: 10px;
-        flex-shrink: 0;
-    }
-    .event-content {
-        flex: 1;
-        min-width: 200px;
-    }
-    .event p {
-        color: #333;
-        margin: 0;
-    }
-    @media (max-width: 600px) { /* Adicionada esta media query */
-        .event {
+        body {
+            display: flex;
             flex-direction: column;
-            text-align: center;
+            align-items: center;
+            background-color: #2c2c2c;
+            color: white;
+            font-family: 'Arial', sans-serif;
+            padding: 20px;
+            height: 100vh;
+        }
+        .timeline {
+            width: 80%;
+            max-width: 800px;
+            position: relative;
+        }
+        .event {
+            background-color: #4a4a4a;
+            border: 2px solid #ff69b4;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .event h3 {
+            color: #ff69b4;
+            margin-bottom: 10px;
         }
         .event img {
-            max-width: 100%;
+            max-width: 150px;
+            height: auto;
+            border-radius: 10px;
+            flex-shrink: 0;
         }
         .event-content {
-            min-width: auto;
+            flex: 1;
+            min-width: 200px;
         }
-    }
+        .event p {
+            color: #b3b3b3;
+            margin: 0;
+        }
+        @media (max-width: 600px) {
+            .event {
+                flex-direction: column;
+                text-align: center;
+            }
+            .event img {
+                max-width: 100%;
+            }
+            .event-content {
+                min-width: auto;
+            }
+        }
+        .back-button {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: #ff69b4;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .back-button:hover {
+            background-color: #ff1493;
+        }
     </style>
 </head>
 <body>
@@ -315,5 +332,8 @@
             </div>
         </div>
     </div>
+
+    <!-- Botão para voltar à página anterior -->
+    <a href="javascript:history.back()" class="back-button">Voltar</a>
 </body>
 </html>
